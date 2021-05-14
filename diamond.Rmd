@@ -1,11 +1,11 @@
-"ggplot" package for the DATA VISUALISATION
-"dplyr" and "skimr" packages for the data manipulation.
+# "ggplot" package for the DATA VISUALISATION
+# "dplyr" and "skimr" packages for the data manipulation.
 ```{r}
 library(ggplot2)
 library(skimr)
 library(dplyr)
 ```
-##viewing the Dataset
+## viewing the Dataset
 ```{r}
 ?diamonds
 view(diamonds)
@@ -26,13 +26,13 @@ table(diamonds$cut)
 unique(diamonds$cut)
 ```
 
-##Visualization --->>
+## Visualization --->>
 ## categorical variables
 ```{r}
 ggplot(data = diamonds)+
   geom_bar(mapping = aes(x=cut))
 ```
-##comparison of variables
+## comparison of variables
 ```{r}
 table(diamonds$cut,diamonds$clarity)
 
@@ -98,6 +98,7 @@ ggplot(diamonds)+
 ggplot(diamonds)+
   geom_bin2d(aes(x=carat,y=price))
 ```
-http://127.0.0.1:24966/chunk_output/s/6784D813/c3vf330juvf2x/000002.png
+![image](https://user-images.githubusercontent.com/70443251/118309272-a3f56180-b50a-11eb-8952-f7ea30fd8145.png)
+
 
 
