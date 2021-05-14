@@ -1,0 +1,105 @@
+"ggplot" package for the DATA VISUALISATION
+"dplyr" and "skimr" packages for the data manipulation.
+```{r}
+library(ggplot2)
+library(skimr)
+library(dplyr)
+```
+##viewing the Dataset
+```{r}
+?diamonds
+view(diamonds)
+head(diamonds)
+tail(diamonds)
+```
+## summarize the datasets
+```{r}
+glimpse(diamonds)       
+summary(diamonds)      #useful for numeric data
+str(diamonds)
+skim(diamonds)
+```
+```{r}
+diamonds %>%
+  count(cut)
+table(diamonds$cut)
+unique(diamonds$cut)
+```
+
+##Visualization --->>
+## categorical variables
+```{r}
+ggplot(data = diamonds)+
+  geom_bar(mapping = aes(x=cut))
+```
+##comparison of variables
+```{r}
+table(diamonds$cut,diamonds$clarity)
+
+diamonds %>%
+  count(cut,clarity) %>%
+  arrange(n)
+```
+
+```{r}
+ggplot(diamonds,aes(x=cut,fill=clarity))+
+  geom_bar(position = "dodge")
+```
+```{r}
+ggplot(diamonds,aes(x=cut,fill=clarity))+
+  geom_bar(position = "dodge")+
+  coord_flip()
+```
+```{r}
+ggplot(diamonds,aes(x=cut,fill=clarity))+
+  geom_bar(position= "fill")+
+  ylab("proportion")
+```
+
+```{r}
+
+```
+
+```{r}
+ggplot(diamonds,aes(x=cut))+
+  geom_bar()+
+  facet_wrap(~clarity)
+```
+
+##Continuous variable
+
+```{r}
+ggplot(diamonds)+
+  geom_histogram(aes(x=carat),binwidth = 0.1)
+
+```
+## co-variation-->>categorical data vs continuous data
+```{r}
+ggplot(diamonds,aes(x=cut,y=price))+
+  geom_boxplot()+
+  coord_flip()
+```
+```{r}
+diamonds %>%
+  count(color,cut) %>%
+  ggplot(aes(x=color,y=cut))+
+  geom_tile(aes(fill=n))
+```
+```{r}
+ggplot(diamonds)+
+  geom_point(aes(x=carat,y=price))
+```
+```{r}
+ggplot(diamonds)+
+  geom_point(aes(x=carat,y=price),alpha=1/10)
+```
+
+```{r}
+ggplot(diamonds)+
+  geom_bin2d(aes(x=carat,y=price))
+```
+```{r}
+?starwars
+```
+
+
