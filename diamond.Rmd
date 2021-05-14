@@ -98,8 +98,6 @@ ggplot(diamonds)+
 ggplot(diamonds)+
   geom_bin2d(aes(x=carat,y=price))
 ```
-```{r}
-?starwars
-```
+http://127.0.0.1:24966/chunk_output/s/6784D813/c3vf330juvf2x/000002.png
 
 
