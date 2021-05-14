@@ -1,4 +1,4 @@
-# DIAMOND_DATA----->> EXPLORATORY DATA ANALYSIS WOTH R
+# DIAMOND_DATA----->> EXPLORATORY DATA ANALYSIS WITH R
 
 ## Discription
 A dataset containing the prices and other attributes of almost 54,000 diamonds. The variables are as follows:
