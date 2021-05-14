@@ -32,6 +32,6 @@ width in mm (0–58.9)
 ## z 
 depth in mm (0–31.8)  
 
-depth total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43–79)  
+### depth total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43–79)  
 
-table width of top of diamond relative to widest point (43–95)
+### table width of top of diamond relative to widest point (43–95)
