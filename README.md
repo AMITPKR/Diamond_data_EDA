@@ -37,6 +37,26 @@ total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43–79)
 
 ### table 
 width of top of diamond relative to widest point (43–95)
+
+
 ![image](https://user-images.githubusercontent.com/70443251/118310343-1ca8ed80-b50c-11eb-826e-7faef2e6e318.png)
 
+
+![image](https://user-images.githubusercontent.com/70443251/118310463-46faab00-b50c-11eb-809a-38aaaebd1a72.png)
+
+
+![image](https://user-images.githubusercontent.com/70443251/118310500-57128a80-b50c-11eb-8a0b-d7f9505bb248.png)
+
+
+![image](https://user-images.githubusercontent.com/70443251/118310556-698cc400-b50c-11eb-9cf2-c05edc068fb0.png)
+
+
+
+![image](https://user-images.githubusercontent.com/70443251/118310586-74dfef80-b50c-11eb-9200-d01891ea72e8.png)
+
+
+![image](https://user-images.githubusercontent.com/70443251/118310620-7dd0c100-b50c-11eb-9937-11560b807638.png)
+
+
+![image](https://user-images.githubusercontent.com/70443251/118310671-8f19cd80-b50c-11eb-95fb-97e335b1af0f.png)
 
